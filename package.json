@@ -41,8 +41,8 @@
     "url": "git+https://github.com/contentful/starter-gatsby-blog.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
-    "build": "gatsby build",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby develop",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
     "heroku-postbuild": "gatsby build",
     "serve": "gatsby serve",
     "postinstall": "node ./bin/hello.js",
